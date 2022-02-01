@@ -1,0 +1,8 @@
+[submodule "external/badvpn"]
+	path = external/badvpn
+	url = https://github.com/guardianproject/badvpn.git
+	ignore = dirty
+[submodule "external/jsocks"]
+	path = external/jsocks
+	url = https://github.com/guardianproject/jsocks.git
+	ignore = dirty

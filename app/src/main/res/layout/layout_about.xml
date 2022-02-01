@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="?dialogPreferredPadding"
+        android:paddingRight="?dialogPreferredPadding">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/wizard_details_msg"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px"
+            android:text="@string/version"
+            android:textColor="@color/bright_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="- Unknown -"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px"
+            android:text="@string/project_home"
+            android:textColor="@color/bright_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/project_urls"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px"
+            android:text="@string/third_party_software"
+            android:textColor="@color/bright_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/tor_version"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/libevent_version"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/obfsproxy_version"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/openssl_version"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px"
+            android:text="@string/license"
+            android:textColor="@color/bright_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutother"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
+
