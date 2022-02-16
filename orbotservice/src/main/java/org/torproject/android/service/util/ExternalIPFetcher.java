@@ -30,7 +30,7 @@ public class ExternalIPFetcher implements Runnable {
     public void run() {
         try {
             Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", mLocalHttpProxyPort));
-            URLConnection conn = new URL(ONIONOO_BASE_URL + mNode.id).openConnection(proxy);
+            URLConnection conn = new URL(ONIONOO_BASE_URL + mNode.getId()).openConnection(proxy);
 
             conn.setRequestProperty("Connection", "Close");
             conn.setConnectTimeout(60000);

@@ -211,7 +211,7 @@ public class OrbotRawEventListener implements RawEventListener {
                 sb.append(" > ");
 
             if (circuitStatus.equals(TorControlCommands.CIRC_EVENT_EXTENDED) && isFirstNode) {
-                hmBuiltNodes.put(node.id, node);
+                hmBuiltNodes.put(node.getId(), node);
 
                 if (node.ipAddress == null && (!node.isFetchingInfo) && Prefs.useDebugLogging()) {
                     node.isFetchingInfo = true;
@@ -223,7 +223,7 @@ public class OrbotRawEventListener implements RawEventListener {
                 if (Prefs.useDebugLogging() && nodeCount > 3)
                     mService.debug(sb.toString());
             } else if (circuitStatus.equals(TorControlCommands.CIRC_EVENT_CLOSED)) {
-                hmBuiltNodes.remove(node.id);
+                hmBuiltNodes.remove(node.getId());
             }
 
         }
@@ -266,13 +266,17 @@ public class OrbotRawEventListener implements RawEventListener {
 
     public static class Node {
         public String status;
-        public String id;
+        private String id;
         public String name;
         public String ipAddress;
         public String country;
         public String organization;
 
         public boolean isFetchingInfo = false;
+
+		public String getId() {
+			return id;
+		}
     }
 
 
